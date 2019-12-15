@@ -1,13 +1,9 @@
-
-#define WIN32_LEAN_AND_MEAN
-
 #include <string>
-
-#include "net/windows/WinSocketEnv.hpp"
+#include "net/SocketEnv.hpp"
 #include "net/WebServer.hpp"
 
 int main() {
-	WinSocketEnv env;
+	SocketEnv env;
 
 	WebServer server;
 	server.bind(8080);

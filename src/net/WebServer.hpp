@@ -4,9 +4,9 @@
 #include <functional>
 
 #if WIN32
-#include "windows/ServerSocket.hpp"
-#elif
-#include "linux/ServerSocket.hpp"
+#include "platform/windows/ServerSocket.hpp"
+#else
+#include "platform/linux/ServerSocket.hpp"
 #endif
 
 class WebServer final {
